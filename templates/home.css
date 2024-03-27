@@ -1,0 +1,407 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #5e254d;
+}
+
+header {
+  background-color: #572a4d;
+  color: #fff;
+  padding: 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(49, 8, 36);
+}
+
+header nav img {
+  height: 50px;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 50px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.landing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  text-align: center;
+  background-color: rgb(87, 45, 81);
+}
+
+.landing .intro {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.landing .intro h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: rgb(231, 226, 226);
+}
+
+.landing .intro span {
+  color: rgb(245, 243, 243);
+}
+
+.about {
+  padding: 50px 0;
+  background-color: rgb(58, 5, 58);
+  text-align: center;
+}
+
+.about h1 {
+  color: #e9e8ed;
+  font-size: 36px;
+}
+
+.about p {
+  margin-bottom: 20px;
+  color: #6e6583;
+}
+
+.about img {
+  margin-top: 30px;
+  max-width: 100%;
+}
+
+.education {
+  padding: 50px 0;
+  background-color: #5e254d;
+  text-align: center;
+}
+
+.education h1 {
+  color: #f3f2f2;
+  font-size: 36px;
+}
+
+.education .col {
+  display: flex;
+  justify-content: center;
+}
+
+.education .col .contents {
+  max-width: 400px;
+}
+
+.education .contents .box {
+  margin-bottom: 30px;
+}
+
+.skills {
+  padding: 50px 0;
+  background-color: rgb(58, 5, 58);
+  text-align: center;
+}
+
+.skills h1 {
+  color: #c2c4c6;
+  font-size: 36px;
+}
+
+.hello {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.hello img {
+  height: 60px;
+  margin-right: 20px;
+}
+
+.containers {
+  width: 100%;
+}
+
+.skillbar {
+  height: 30px;
+  line-height: 30px;
+  color: #260548c2;
+  text-align: right;
+  padding-right: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.skillbar.python {
+  background-color: green;
+}
+
+.skillbar.html {
+  background-color: #e34c26;
+}
+
+.skillbar.css {
+  background-color: #264de4;
+}
+
+.skillbar.js {
+  background-color: #f7df1e;
+}
+
+.portfolio {
+  padding: 50px 0;
+  background-color: #5e254d;
+  text-align: center;
+}
+
+.portfolio h1 {
+  color: #f0e9e9;
+  font-size: 36px;
+}
+
+.scroll-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.scroll-container img {
+  margin: 0 10px;
+}
+
+.contact {
+  padding: 50px 0;
+  background-color: #401236;
+  text-align: center;
+}
+
+.contact h1 {
+  color: #fefafa;
+  font-size: 36px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.row section.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.row section.left {
+  flex-basis: 35%;
+  min-width: 320px;
+  margin-right: 60px;
+}
+
+.row section.right {
+  flex-basis: 60%;
+}
+
+.row section.left .contactTitle h2 {
+  position: relative;
+  font-size: 28px;
+  color: #f2f0f0;
+  display: inline-block;
+  margin-bottom: 50
+  px;
+}
+
+.row section.left .contactTitle h2::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  background-color: #e8e6e6;
+  top: 120%;
+  left: 0;
+}
+
+.row section.left .contactTitle h2::after {
+  content: '';
+  position: absolute;
+  width: 55%;
+  height: 4px;
+  background-color: rgba(79, 27, 68, 0.473);
+  top: calc(120% - 1px);
+  left: 0;
+}
+
+.row section.left .contactTitle p {
+  font-size: 17px;
+  color: #4c1138;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  padding-bottom: 30px;
+}
+
+.row section.left .contactInfo {
+  margin-bottom: 16px;
+}
+
+.iconGroup {
+  display: flex;
+  align-items: center;
+  background-color: #5e254d;
+  margin: 25px 0;
+}
+
+.iconGroup .icon {
+  width: 45px;
+  height: 45px;
+  border: 2px solid rgba(148, 181, 148, 0.459);
+  border-radius: 50%;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Continued CSS for the HTML code */
+
+.messageForm {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.inputGroup {
+  margin: 18px 0;
+  position: relative;
+}
+
+.messageForm .halfWidth {
+  flex-basis: 48%;
+}
+
+.messageForm .fullWidth {
+  flex-basis: 100%;
+}
+
+.messageForm input,
+.messageForm textarea {
+  width: 100%;
+  font-size: 10px;
+  padding: 10px 12px;
+  background-color: #f4f4f4;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.messageForm textarea {
+  height: 120px; /* Set the height for the textarea */
+}
+
+.messageForm label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #777;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.messageForm input:focus ~ label,
+.messageForm textarea:focus ~ label,
+.messageForm input:valid ~ label,
+.messageForm textarea:valid ~ label {
+  top: -12px;
+  left: 8px;
+  font-size: 12px;
+  color: rgb(203, 210, 218);
+}
+
+.messageForm button {
+  padding: 10px 20px;
+  background-color: rgb(232, 236, 240);
+  color: #131212;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.messageForm button:hover {
+  background-color: rgb(7, 51, 7);
+}
+.socialMedia {
+  display: flex;
+  justify-content: right;
+}
+
+.socialMedia a {
+  margin: 0 10px; /* Adjust spacing between icons */
+  color: #fcfbfb; /* Change icon color */
+  font-size: 30px; /* Adjust icon size */
+  text-decoration: none;
+}
+
+.socialMedia a:hover {
+  color: #fefafa; /* Change icon color on hover */
+}
+
+.fa-brands {
+  font-family: "Font Awesome 5 Brands"; /* Assuming you are using Font Awesome icons */
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa; /* Change background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+nav img {
+  height: 100x;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: right;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px; /* Adjust spacing between menu items */
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li a button {
+  padding: 10px 20px; /* Adjust button padding */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #4b133c; /* Change button text color */
+}
+
+nav ul li a button:hover {
+  color: #872828; /* Change button text color on hover */
+}
